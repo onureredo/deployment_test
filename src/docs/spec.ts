@@ -7,7 +7,13 @@ export const openapiSpec: OpenAPIV3_1.Document = {
     version: '1.0.0',
     description: 'Travel Journal API Docs',
   },
-  servers: [{ url: 'http://localhost:3000', description: 'local dev' }],
+  // servers: [{ url: 'http://localhost:3000', description: 'local dev' }],
+  servers: [
+    {
+      url: 'https://deployment-test-tpj4.onrender.com',
+      description: 'local dev',
+    },
+  ],
   tags: [{ name: 'Auth' }, { name: 'Users' }, { name: 'Posts' }],
   components: {
     securitySchemes: {
